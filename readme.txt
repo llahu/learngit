@@ -11,4 +11,4 @@ Git has a mutable index called stage.
 git move
 hello git123
 >>>>>>> 686b6566dd498f4dacadfa8e3f6c35d04fe35c60
-creating a new branch is quick.
+creating a new branch is quick & simple.
