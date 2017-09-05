@@ -1,0 +1,20 @@
+package typeinfo;
+
+public class Parcel3 {
+	  class Contents {//内部类
+	    private int i = 11;
+	    public int value() { return i; }
+	  }
+	  class Destination {//内部类
+	    private String label;
+	    Destination(String whereTo) { label = whereTo; }
+	    String readLabel() { return label; }
+	  }
+	  public static void main(String[] args) {
+	    Parcel3 p = new Parcel3();
+	    // Must use instance of outer class
+	    // to create an instance of the inner class:
+	    Parcel3.Contents c = p.new Contents();//实例化Contents内部类对象
+	    Parcel3.Destination d = p.new Destination("Tasmania");//实例化内部类对象
+	  }
+	} ///:~
